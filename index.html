@@ -12,32 +12,45 @@
     <link rel="stylesheet" href="assets/app.css">
     <script type="text/javascript" src="assets/app.bundle.js"></script>
   </head>
-  <body ng-app="app">
+  <body ng-app="app" ng-controller="MainController as MainCtrl">
 <nav class="navbar navbar-default" role="navigation">
   <div class="navbar-header">
-		<a class="navbar-brand" href="#">Lidget</a>
+    <button class="btn btn-secondary" ng-click="route('home')">Lidget</Button>
 	</div>
   <div class="collapse navbar-collapse right" uib-collapse="isNavCollapsed">
 		<ul class="nav navbar-nav">
-			<li><a href="#">Learn</a></li>
-			<li><a href="#">Kits</a></li>
-			<li><a href="#">About</a></li>
+      <button class="btn btn-secondary" ng-click="route('learn')">Learn</Button>
+      <button class="btn btn-secondary" ng-click="route('kits')">Kits</Button>
+      <button class="btn btn-secondary" ng-click="route('about')">About</Button>
 		</ul>
 	</div>
 </nav>
 
-<div class="row top-title"  ng-controller="MainController as MainCtrl">
+<div ng-if="show('home')" class="row top-title">
   <h1>Lidget</h1>
   <p>Build, Customize, Learn</p>
-  <iframe width="700" height="400" src="https://www.youtube.com/embed/1Mlhnt0jMlg" frameborder="0" allowfullscreen></iframe>
+  <iframe width="700" height="400" src="https://www.youtube.com/embed/_9EaK3fES5A" frameborder="0" allowfullscreen></iframe>
   <div class="row checkout">
-    <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+    <button type="button" class="btn btn-primary" ng-click="route('learn')">
          Learn the science
      </button>
-    <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+    <button type="button" class="btn btn-primary" ng-click="route('kits')">
         Check out our products
      </button>
  </div>
+</div>
+
+<div ng-if="show('about')" class="row top-title">
+  <h1>About page</h1>
+</div>
+
+<div ng-if="show('kits')" class="row top-title"  ng-controller="MainController as MainCtrl">
+  <h1>kits</h1>
+</div>
+
+<div ng-if="show('learn')" class="row top-title learn"  ng-controller="MainController as MainCtrl">
+  <h1>How Lidget works</h1>
+  <img class="learn-pic" src="assets/learn.png" />
 </div>
 
   </body>

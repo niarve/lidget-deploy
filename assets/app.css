@@ -18,6 +18,10 @@
 .top-title .checkout button {
   margin: 2em 1em; }
 
+.learn .learn-pic {
+  height: 30em !important;
+  width: 30em !important; }
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #fff;
