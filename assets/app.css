@@ -4,10 +4,21 @@
   position: fixed;
   opacity: 0.8; }
 
+.nav-logo {
+  height: 2em; }
+
+.home-logo {
+  margin-top: 5em;
+  height: 4em; }
+
 .right {
   position: fixed;
+  height: 2em;
   right: 0;
-  margin: 0 2em; }
+  margin: 0 4em; }
+
+.margin-left {
+  margin-left: 4em; }
 
 .top-title h1 {
   margin-top: 3em; }
@@ -20,6 +31,8 @@
 
 .about {
   padding: 0 15em; }
+  .about .padding {
+    padding: 1em 5em; }
 
 .kits {
   padding: 0 15em; }
@@ -37,6 +50,8 @@
     text-align: justify; }
   .kits .kit .margin-top {
     margin-top: 3em; }
+  .kits #image {
+    margin-left: -18em; }
 
 .learn {
   padding: 0 15em; }
