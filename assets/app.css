@@ -18,9 +18,31 @@
 .top-title .checkout button {
   margin: 2em 1em; }
 
-.learn .learn-pic {
-  height: 40em !important;
-  width: 50em !important; }
+.about {
+  padding: 0 15em; }
+
+.kits {
+  padding: 0 15em; }
+  .kits .jumbotron {
+    margin: 0 5em !important; }
+  .kits .kit img {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    height: 12em;
+    width: 14em; }
+  .kits .kit .left-align {
+    text-align: justify; }
+  .kits .kit .margin-top {
+    margin-top: 3em; }
+
+.learn {
+  padding: 0 15em; }
+  .learn .learn-pic {
+    height: 40em !important;
+    width: 50em !important; }
 
 body {
   font-family: "Open Sans", sans-serif;
